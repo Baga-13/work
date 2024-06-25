@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Source+Sans+Pro:wght@200;300;400;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .font-regular {
+    font-weight: 400; /* Example style */
+  }
+  .sidebar {
+    @apply py-3 shadow-xl flex flex-col z-50 absolute rounded font-bcd text-[14px] bg-white right-5 top-[2.9rem];
+  }
+  .sd-link {
+    @apply hover:bg-slate-100 cursor-pointer text-[14px] font-light text-gray-700 rounded px-8 py-2;
+  }
+  .greenbutton {
+    @apply bg-[#8FD400] font-ab py-3 cursor-pointer px-5 md:px-8 hover:shadow-xl transition-all hover:animate-pulse text-white hover:bg-slate-100 hover:text-[#2f3061] rounded-md mt-9;
+  }
+  .inputLogin {
+    @apply border hover:border-[#8FD400] w-[20rem] focus:outline-blue-400 font-ab rounded-md py-2 px-2 font-light text-[14px];
+  }
+  .input {
+    @apply border hover:border-[#8FD400] w-[20rem] focus:outline-blue-400 font-ab rounded-md py-2 px-2 font-light text-[14px];
+  }
+}
